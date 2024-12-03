@@ -1,0 +1,2421 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology/1.0.0"/>
+        <rdfs:comment xml:lang="en">This ontology is designed to prvovide an explicit understanding to the technical aspects of Mobile App Development</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">Bilal Abu-Salih
+
+The University of Jordan</rdfs:isDefinedBy>
+        <owl:versionInfo xml:lang="en">V1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#hasExecutionEnvironment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#hasExecutionEnvironment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#hasFrontendFramework -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#hasFrontendFramework"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useProgramingLanguage -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useProgramingLanguage">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLanguage"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useSDK -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useSDK">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#SDK"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontology/deployedOn -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology/deployedOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobilePlatform"/>
+        <rdfs:comment>Represents the relationship between an entity (such as software or a service) and the platform or environment where it is deployed.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontology/designedFor -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology/designedFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/ontology/UIUXDesign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobilePlatform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontology/developedUsing -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology/developedUsing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentApproach"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentEnd"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLanguage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLibrary"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontology/includesPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology/includesPlatform">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Native"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AndroidDevelopment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#iOSDevelopment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontology/managesAccess -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology/managesAccess">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DeviceAccessManager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#CameraAccess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#HardwareIntegration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#LocationServices"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#PermissionsManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#SensorAccess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#StorageAccess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontology/usesContainerization -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology/usesContainerization">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#uses"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/ontology/utilizesRuntime -->
+
+    <owl:ObjectProperty rdf:about="http://example.com/ontology/utilizesRuntime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#uses"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RuntimeEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#compatibleWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#compatibleWith"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#requires"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#requiresDB -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#requiresDB">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#requires"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackEndDevelopment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Database"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#runsOnOS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#runsOnOS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobilePlatform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#useAI -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useAI">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useEmergingTech"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#ArtificialIntelligence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#useAR -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useAR">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useEmergingTech"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#AugmentedReality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#useBlockchain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useBlockchain">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useEmergingTech"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Blockchain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#useEmergingTech -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useEmergingTech">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#uses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#useIoT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useIoT">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useEmergingTech"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#InternetOfThings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#useVR -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useVR">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#useEmergingTech"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#VirtualReality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#uses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#hasExecuationEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#hasExecuationEnvironment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useIDE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useIDE">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#uses"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AndroidDevelopment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CrossPlatform"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileWeb"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#iOSDevelopment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useProgramingLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useProgramingLanguage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#uses"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentApproach"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLanguage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useSDK -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#useSDK">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#uses"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentApproach"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#SDK"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontology/FrontendArchitecture -->
+
+    <owl:Class rdf:about="http://example.com/ontology/FrontendArchitecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontEndDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontology/MobileOS -->
+
+    <owl:Class rdf:about="http://example.com/ontology/MobileOS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/ontology/UIUXDesign -->
+
+    <owl:Class rdf:about="http://example.com/ontology/UIUXDesign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontEndDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#API_Development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#API_Development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#SupportingTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#AdaptiveDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#AdaptiveDesign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileWeb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#ArtificialIntelligence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#ArtificialIntelligence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#EmergingTechnology"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#AugmentedReality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#AugmentedReality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#AugmentedReality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#EmergingTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#AutomaticReferenceCounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#AutomaticReferenceCounting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MemoryManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Blockchain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Blockchain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#EmergingTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#CameraAccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#CameraAccess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DeviceAccessManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#CloudService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#CloudService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#SupportingTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#CompiledLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#CompiledLanguage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Component-based -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Component-based">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#ComputerVision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#ComputerVision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#ArtificialIntelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#DataFramework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#DataFramework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#SupportingTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#DevOpsEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#DevOpsEngineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileAppDeveloper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#EmergingTechnology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#EmergingTechnology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#FullStackDeveloper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#FullStackDeveloper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileAppDeveloper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#GarbageCollection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#GarbageCollection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MemoryManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#HardwareIntegration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#HardwareIntegration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DeviceAccessManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Hybrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#InternetOfThings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#InternetOfThings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#EmergingTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#InterpretedLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#InterpretedLanguage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#JavaScriptBridging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#JavaScriptBridging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CrossPlatform"/>
+        <rdfs:comment>Apps written in JavaScript that interact with native code through bridges.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#LocationServices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#LocationServices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DeviceAccessManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#MachineLearning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MachineLearning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#ArtificialIntelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#ManualMemoryManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#ManualMemoryManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MemoryManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Markup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Markup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#MemoryLeakDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MemoryLeakDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MemoryManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileApp"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileAppTester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileAppTester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#NaturalLanguageProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#NaturalLanguageProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#ArtificialIntelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#NoSQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#NoSQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#PermissionsManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#PermissionsManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DeviceAccessManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#QAEngineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#QAEngineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MobileAppTester"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#RelationalDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RelationalDB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#ResponsiveDesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#ResponsiveDesign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileWeb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#RuntimeEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RuntimeEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Scripting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Scripting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#SensorAccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#SensorAccess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DeviceAccessManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#StorageAccess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#StorageAccess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DeviceAccessManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Stylesheet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Stylesheet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#SupportingTechnology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#SupportingTechnology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#UIUXDesigner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#UIUXDesigner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendDeveloper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#VirtualReality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#VirtualReality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#EmergingTechnology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#WebFramework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#WebFramework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Android -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Android">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobilePlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AndroidDevelopment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AndroidDevelopment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Native"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AppMarket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AppMarket">
+        <rdfs:comment>Platforms for distributing mobile apps</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackEndDevelopment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackEndDevelopment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentEnd"/>
+        <rdfs:comment>Handles the server-side logic of the app, including data processing, storage, and interactions with external services.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendDeveloper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendDeveloper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileAppDeveloper"/>
+        <rdfs:comment>Specializes in the server-side logic and data management of the app.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLibrary"/>
+        <rdfs:comment>Libraries that provide structure and tools for back-end development. (</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendLanguage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLanguage"/>
+        <rdfs:comment>Languages primarily used for back-end development</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CrossPlatform"/>
+        <hasExecutionEnvironment rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#NativeByteCode"/>
+        <hasFrontendFramework rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Apportable"/>
+        <rdfs:comment>Code written in a language that compiles to native code for each target platform</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CrossPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CrossPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentApproach"/>
+        <rdfs:comment>Apps built using a single codebase that can run on multiple platforms. Can be less performant than native apps but reduces development time and cost.</rdfs:comment>
+        <rdfs:comment>obtained from A Survey and Taxonomy of Core Concepts and Research Challenges in Cross-Platform Mobile Development</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentApproach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentApproach"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentEnd">
+        <rdfs:comment>This class categorizes the different development areas involved in building a mobile app</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLanguage">
+        <rdfs:comment>Programming languages used for building mobile apps</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLibrary">
+        <rdfs:comment>Reusable code collections that provide functionality for developers</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentToolCost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentToolCost">
+        <rdfs:comment>This class categorizes the cost associated with development tools</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DeviceAccessManager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DeviceAccessManager">
+        <rdfs:comment>Software components that manage how the app interacts with device features</rdfs:comment>
+        <rdfs:comment>obtained from A Survey and Taxonomy of Core Concepts and Research
+Challenges in Cross-Platform Mobile Development</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment">
+        <rdfs:comment>This class represents the platform on which a mobile app runs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Framework_Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Framework_Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontEndDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontEndDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontEndDevelopment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontEndDevelopment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentEnd"/>
+        <rdfs:comment>Focuses on the user interface (UI) and user experience (UX) of the app, including visual design, layout, and user interaction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendDeveloper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendDeveloper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileAppDeveloper"/>
+        <rdfs:comment>Specializes in building the user interface and user experience of the app.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLibrary"/>
+        <rdfs:comment>Libraries that simplify front-end development by providing pre-built UI components and development patterns.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendLanguage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentLanguage"/>
+        <rdfs:comment>Languages primarily used for front-end development</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CrossPlatform"/>
+        <hasExecutionEnvironment rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#WebView"/>
+        <rdfs:comment>Apps that leverage a web view component within a native app container.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE">
+        <rdfs:comment>Integrated Development Environments that provide tools for writing, editing, and debugging code.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CrossPlatform"/>
+        <hasExecutionEnvironment rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpeter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MemoryManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MemoryManagement">
+        <rdfs:comment>Techniques and tools for optimizing memory usage within the app.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileAppDeveloper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileAppDeveloper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Person"/>
+        <rdfs:comment>This class represents the individual(s) responsible for building the mobile app. It can be further specialized (subclasses) based on expertise</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobilePlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobilePlatform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileWeb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobileWeb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentApproach"/>
+        <rdfs:comment>Apps built using web technologies (HTML, CSS, JavaScript) that run within a mobile browser. Offer wider reach but may have limitations in functionality and user experience compared to native apps.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CrossPlatform"/>
+        <hasExecutionEnvironment rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#NativeByteCode"/>
+        <rdfs:comment>Development focused on defining app logic and data models, with automatic generation of platform-specific code.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Native -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Native">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentApproach"/>
+        <rdfs:comment>Apps developed specifically for a single platform (Android or iOS) using platform-specific tools and languages. Offers optimal performance and access to native features.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CrossPlatform"/>
+        <hasExecutionEnvironment rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Browser"/>
+        <rdfs:comment>Web apps that offer app-like features and functionality (offline access, push notifications).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#SDK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#SDK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontEndDevelopment"/>
+        <rdfs:comment>A set of tools and libraries offered by a platform or service to facilitate app development.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#WindowsPhone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#WindowsPhone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobilePlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#iOS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#iOS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobilePlatform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#iOSDevelopment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#iOSDevelopment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Native"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/ontology/ASP.NET -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/ASP.NET">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Android -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Android">
+        <rdf:type rdf:resource="http://example.com/ontology/MobileOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Angular -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Angular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Framework_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Backbone.js -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Backbone.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Framework_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/BlackBerryOS -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/BlackBerryOS">
+        <rdf:type rdf:resource="http://example.com/ontology/MobileOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/CSS -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/CSS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/DartVM -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/DartVM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RuntimeEnvironment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/DataFramework -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/DataFramework">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Django -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Django">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Dropwizard -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Dropwizard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Ember.js -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Ember.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Framework_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Express.js -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Express.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Flask -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Flask">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Flux -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Flux">
+        <rdf:type rdf:resource="http://example.com/ontology/FrontendArchitecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Freemium -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Freemium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentToolCost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/HTML -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/HTML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/HarmonyOS -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/HarmonyOS">
+        <rdf:type rdf:resource="http://example.com/ontology/MobileOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/JSX -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/JSX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/JavaEE -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/JavaEE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/JavaScript -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/JavaScript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/JavaScriptEngine -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/JavaScriptEngine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RuntimeEnvironment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/JavaVirtualMachine -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/JavaVirtualMachine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RuntimeEnvironment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/KaiOS -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/KaiOS">
+        <rdf:type rdf:resource="http://example.com/ontology/MobileOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/LESS -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/LESS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Laravel -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Laravel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/MVC -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/MVC">
+        <rdf:type rdf:resource="http://example.com/ontology/FrontendArchitecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/MVP -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/MVP">
+        <rdf:type rdf:resource="http://example.com/ontology/FrontendArchitecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/MVVM -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/MVVM">
+        <rdf:type rdf:resource="http://example.com/ontology/FrontendArchitecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Node.js -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Node.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/OpenSource -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/OpenSource">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentToolCost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/ReactJS -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/ReactJS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Framework_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Redux -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Redux">
+        <rdf:type rdf:resource="http://example.com/ontology/FrontendArchitecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/RubyOnRails -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/RubyOnRails">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/SCSS -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/SCSS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/SailfishOS -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/SailfishOS">
+        <rdf:type rdf:resource="http://example.com/ontology/MobileOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Spring -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Spring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Svelte -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Svelte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Framework_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/SwiftRuntime -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/SwiftRuntime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RuntimeEnvironment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Tizen -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Tizen">
+        <rdf:type rdf:resource="http://example.com/ontology/MobileOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/TypeScript -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/TypeScript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/Vue.js -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/Vue.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Framework_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/WebComponents -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/WebComponents">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FI-Framework_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/WindowsPhone -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/WindowsPhone">
+        <rdf:type rdf:resource="http://example.com/ontology/MobileOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/iOS -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/iOS">
+        <rdf:type rdf:resource="http://example.com/ontology/MobileOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/.NETCore -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/.NETCore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/ontology/.NETRuntime -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/ontology/.NETRuntime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RuntimeEnvironment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#AWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#AWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#CloudService"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Azure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Azure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#CloudService"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Docker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Docker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Firebase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Firebase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#NoSQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Google_Cloud_Platform -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Google_Cloud_Platform">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#CloudService"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Kubernetes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Kubernetes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#LXC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#LXC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#LXD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#LXD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#MongoDB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MongoDB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#NoSQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#MySQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MySQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RelationalDB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#OpenShift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#OpenShift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#Podman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Podman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#PostgreSQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#PostgreSQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#RelationalDB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies//MAD-Ontology#rkt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#rkt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Containerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AXIOM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AXIOM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Adobe_AIR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Adobe_AIR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Adobe_Animate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Adobe_Animate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Android_Development -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Android_Development"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Android_Studio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Android_Studio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Angular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Angular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AppCode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AppCode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AppGyver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AppGyver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Appian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Appian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Applause -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Applause">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Apportable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Apportable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Automobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Automobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BlackBerry_JDE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BlackBerry_JDE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Browser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Browser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CSS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#CSS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Capacitor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Capacitor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cocoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cocoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Codename_One -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Codename_One">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Commercial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Commercial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DevelopmentToolCost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cordova -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cordova">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Corona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Corona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Crosslight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Crosslight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DragonRAD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#DragonRAD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ELIPS_Studio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ELIPS_Studio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Eclipse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Eclipse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Embarcadero_Delphi_XE2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Embarcadero_Delphi_XE2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Ember.js -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Ember.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#EvoThings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#EvoThings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Flutter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Flutter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Framework7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Framework7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Free -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Free"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Fusetools -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Fusetools">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Glimmer.js -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Glimmer.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Google_Play_Store -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Google_Play_Store">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AppMarket"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#HTML -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#HTML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IOS_Development -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IOS_Development"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Intel_App_Framework -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Intel_App_Framework">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Intel_XDK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Intel_XDK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IntelliJ_IDEA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IntelliJ_IDEA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpeter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpeter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Ionic_Framework -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Ionic_Framework">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Jasonette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Jasonette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Java -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Java">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#JavaScript -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#JavaScript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Kony -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Kony">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Lazarus_IDE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Lazarus_IDE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#LuaView -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#LuaView">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MAML -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MAML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MOPPET -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MOPPET">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Marmalade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Marmalade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Mendix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Mendix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Microsoft_Visual_Studio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Microsoft_Visual_Studio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Mithril -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Mithril">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MoSync -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MoSync">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobDSL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobDSL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobML -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MobML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Mobia_Modeler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Mobia_Modeler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Mobl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Mobl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MonoCross -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MonoCross">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MonoDevelop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#MonoDevelop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Moon.js -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Moon.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#NativeByteCode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#NativeByteCode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#NativeScript -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#NativeScript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Onsen_UI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Onsen_UI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#PHP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#PHP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#PhoneGap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#PhoneGap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Polymer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Polymer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Preact -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Preact">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Python -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Python">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#BackendLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Qt_Mobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Qt_Mobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Quasar_Framework -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Quasar_Framework">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#React.js -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#React.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#React_Native -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#React_Native">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies//MAD-Ontology#JavaScriptBridging"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#RhoMobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#RhoMobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Rhodes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Rhodes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#RoboVM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#RoboVM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Sencha_Touch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Sencha_Touch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Smartface_Cloud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Smartface_Cloud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Stencil.js -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Stencil.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Svelte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Svelte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Tabris.js -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Tabris.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Titanium_Appcelerator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Titanium_Appcelerator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Titanium_Studio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Titanium_Studio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Trigger.io -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Trigger.io">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Vue.js -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Vue.js">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#WebRatio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#WebRatio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#WebView -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#WebView">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ExecutionEnvironment"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Weex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Weex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Interpreted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Windows_Phone_Store -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Windows_Phone_Store">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AppMarket"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#XIS-Mobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#XIS-Mobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xamarin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xamarin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xcode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xcode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xmob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xmob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xojo_IDE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xojo_IDE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#IDE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xojo_Mobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Xojo_Mobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Cross-compiled"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Zuix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Zuix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#iTunes_Apps_Store -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#iTunes_Apps_Store">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#AppMarket"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#mdsl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#mdsl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Model-Driven"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#viperHTML -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#viperHTML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#FrontendFramework"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#ProgressiveWebApps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#NSB/AppStudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#NSB/AppStudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#RAD_Studio_(Delphi) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2021/2/untitled-ontology-8#RAD_Studio_(Delphi)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#AutomaticReferenceCounting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#GarbageCollection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#ManualMemoryManagement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#MemoryLeakDetection"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#CameraAccess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#HardwareIntegration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#LocationServices"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#PermissionsManagement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#SensorAccess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#StorageAccess"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Markup"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Scripting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies//MAD-Ontology#Stylesheet"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
